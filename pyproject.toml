@@ -1,0 +1,21 @@
+[project]
+name = "upsidecode"
+version = "0.1.0"
+description = "UpsideCode — an LLM-native coding harness with background agents, tool registry, session permissions, and neon-terminal vibes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "typer>=0.12.3",
+  "pydantic>=2.8.2",
+  "PyYAML>=6.0.1",
+  "requests>=2.32.0",
+  "rich>=13.7.1",
+]
+
+[project.scripts]
+upside = "upsidecode.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

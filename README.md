@@ -9,8 +9,7 @@ Why it feels “big”:
 - **Telemetry artifacts** per run (`summary.json`, `telemetry.jsonl`)
 - **LLM plan generation** constrained to allowlisted tools
 
-Inspired by the *style* and thoroughness of popular agent harness repos like `oh-my-opencode`. citeturn0search0turn0search3
-
+Inspired by the *style* and thoroughness of popular agent harness repos like `oh-my-opencode`. 
 ---
 
 ## Install

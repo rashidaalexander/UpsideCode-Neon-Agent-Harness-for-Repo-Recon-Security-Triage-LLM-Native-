@@ -1,0 +1,34 @@
+{
+  "objective": "Map the repo, scan for obvious secrets, then ask the Librarian to write an overview.",
+  "steps": [
+    {
+      "tool": "repo.tree",
+      "args": {
+        "path": ".",
+        "max_items": 200
+      }
+    },
+    {
+      "tool": "sec.secrets_scan",
+      "args": {
+        "path": ".",
+        "include": [
+          ".py",
+          ".env",
+          ".txt",
+          ".json",
+          ".yml",
+          ".yaml",
+          ".toml",
+          ".md"
+        ]
+      }
+    },
+    {
+      "tool": "llm.librarian",
+      "args": {
+        "note": "Use telemetry from previous steps to draft: TL;DR, risks, next actions."
+      }
+    }
+  ]
+}

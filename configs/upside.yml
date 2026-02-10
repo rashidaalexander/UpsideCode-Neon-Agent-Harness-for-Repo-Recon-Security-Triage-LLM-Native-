@@ -1,0 +1,10 @@
+mode: shadow
+workspace_root: "."
+allowlist_domains:
+  - example.com
+max_file_bytes: 2000000
+max_steps: 24
+perms:
+  network: false
+  write_files: false
+  run_git: true
